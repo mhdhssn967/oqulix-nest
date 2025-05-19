@@ -1,0 +1,13 @@
+*{
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0px;
+}
+:root{
+  --background-color:#fcfcfc;
+  --logo-one:#fbd87f;
+  --logo-two:#f75590;
+  --logo-three:#10ffcb;
+}
+body{
+  background-color: var(--background-color);
+}

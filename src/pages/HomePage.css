@@ -1,0 +1,8 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-div{
+    margin: 3%;
+}
