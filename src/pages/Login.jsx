@@ -15,7 +15,7 @@ const Login = () => {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       console.log('Logged in:', userCredential.user);
-      navigate('/home'); // Redirect to home when login is successful
+      navigate('/'); // Redirect to home when login is successful
     } catch (error) {
       alert('Login failed: ' + error.message);
     }
