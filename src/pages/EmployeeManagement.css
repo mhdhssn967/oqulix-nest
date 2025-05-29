@@ -78,3 +78,20 @@
     position: sticky;
     top: 0px;
 }
+@media (max-width:600px){
+    .emp-manage-container{
+        justify-content: left;
+    }
+    .table-container{
+        overflow-x: scroll;
+        width: 100vw;
+    }
+    .emp-add{
+        filter: none;
+    }
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+}
