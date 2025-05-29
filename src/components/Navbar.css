@@ -11,11 +11,10 @@
     margin: 1% 0.1% 1% 1%;
     filter: invert(1);
 }
-.nav-container p{
-    font-size: 50px;
-    font-weight: 300;
-     font-family: "Raleway", sans-serif;
+.user-name-nav{
+    font-size: 20px;
 }
+
 .nav-container div{
     display: flex;
     margin: 2%;
@@ -29,4 +28,20 @@
 .logout:hover{
     text-decoration: underline;
     transform: scale(1.1);
+}
+@media (max-width:600px){
+    .nav-container img{
+    width: 30px;
+}
+.nav-container p{
+    font-size: 14px;
+}.user-name-nav{
+    font-size: 12px;
+}
+.logout{
+    font-size: 12px;
+}
+.nav-container{
+    height: 40px;
+}
 }

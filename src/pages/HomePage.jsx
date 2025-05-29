@@ -14,9 +14,9 @@ const HomePage = () => {
       <Navbar />
       <div className='container'>
         <div className='main-div'>
-          <img width={'800px'} src={logo} alt="" />
-          <p style={{ fontSize: '30px', textWrap: 'nowrap' }}>Your gateway to a suite of smart, purpose-built applications.</p>
-          <p style={{ textAlign: 'right', marginTop: '30px', fontSize: '20px' }}>Crafted with care. Powered by Oqulix.</p>
+          <img className='home-img' src={logo} alt="" />
+          <p className='home-text'>Your gateway to a suite of smart, purpose-built applications.</p>
+          <p className='home-tagline'>Crafted with care. Powered by Oqulix.</p>
         </div>
         <div className='img-div'>
           <img style={{ width: '80%' }} src={img1} alt="" />

@@ -65,3 +65,11 @@
 .input-form button:active{
     background-color: var(--logo-three);
 }
+@media (max-width:600px) {
+    .login-container{
+        flex-direction: column;
+    }
+    .left-img{
+        width: 200px;
+    }
+}

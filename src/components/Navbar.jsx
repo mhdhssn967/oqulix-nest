@@ -35,11 +35,12 @@ useEffect(() => {
   return (
     <>
       <div className='nav-container'>
-        <div><img src={OQ} alt="" /><p>Oqulix</p></div>
-        <h3>{companyName}</h3>
-        <p style={{fontSize:'25px'}}><i className="fa-solid fa-circle-user"></i> {userName}</p>
+        <div><img src={OQ} alt=""  /></div>
+        <p className='user-name-nav'><i className="fa-solid fa-circle-user"></i> {userName}</p>
         <div><button className='logout' onClick={handleLogout}>Logout</button></div>
       </div>
+              <h3 style={{margin:'10px'}}>{companyName}</h3>
+
     </>
   );
 };
