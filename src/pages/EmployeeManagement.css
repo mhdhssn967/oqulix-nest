@@ -49,9 +49,11 @@
 .emp-table table tr:hover{
     background-color: var(--logo-one);
 }
+.emp-table table tbody tr{
+    background-color: antiquewhite;
+}
 .emp-add .form input,.emp-add .form button,.emp-add .form select{
     padding: 8px;
-
     border-radius: 5px;
 }
 .emp-add .form button{
@@ -71,7 +73,7 @@
     height: 75vh;
     position: sticky;
     top: 70%;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     overflow-y: scroll;
 }
 .table-container table thead{
@@ -93,5 +95,23 @@
         width: 100vw;
         overflow-x: hidden;
     }
+    .table-container table{
+        width: 100%;
+        margin-right: 20px;
+        font-size: 10px;
+    }
+    .emp-table table tr td{
+    padding: 5px;
+}
+.emp-table table tr td,.emp-table table thead tr td{
+    width: 10px;
+}
+.emp-table table thead tr{
+    height: 20px;
+}
+.emp-table h2{
+    font-size: 15px;
+    margin-top: -50px;
+}
 
 }

@@ -58,7 +58,7 @@ const EmployeeManagement = () => {
                                     <td>{emp.empEmail}</td>
                                     <td>{emp.empSuperVisor}</td>
                                 </tr>)):
-                                <tr>No Employees Exist....</tr>
+                                <tr><td colSpan={'6'}>No Employees Exist....</td></tr>
                                 }
                                 
                             </tbody>
