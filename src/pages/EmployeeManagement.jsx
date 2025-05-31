@@ -4,6 +4,7 @@ import './EmployeeManagement.css'
 import { addNewEmployee } from '../services/AddEmployee'
 import { auth } from '../../firebaseConfig'
 import { fetchEmployees, fetchUserDetails } from '../services/fetchUserData'
+import { Link } from 'react-router-dom'
 
 
 const EmployeeManagement = () => {
@@ -32,7 +33,10 @@ const EmployeeManagement = () => {
     return (
         <>
             <Navbar />
-            <div className='emp-manage-container'>
+<Link to={'/'}>
+                <button style={{backgroundColor:'var(--logo-two)',padding:'5px',borderRadius:'30px',border:'none',fontSize:'15px',margin:'30px',cursor:'pointer'}}><i className='fa-solid fa-arrow-left'></i>Back to home</button>
+    
+</Link>            <div className='emp-manage-container'>
                 <div className='emp-table'>
                     <h2>Employee List</h2>
                     <div className='table-container'>
