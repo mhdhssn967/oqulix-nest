@@ -5,29 +5,42 @@ import HomePage from './pages/HomePage';
 import { auth } from '../firebaseConfig';
 import { onAuthStateChanged } from 'firebase/auth';
 import EmployeeManagement from './pages/EmployeeManagement';
+import lg from './assets/lg.gif'; // Loading gif import
 
 const App = () => {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true); // Add loading state
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      if (user) {
-        setUser(user);
-      } else {
-        setUser(null);
-      }
+      setUser(user);
+      setLoading(false); // Done loading
     });
 
     return () => unsubscribe();
   }, []);
+
+  if (loading) {
+    // Show loading screen
+    return (
+      <div style={{ 
+        height: '100vh', 
+        display: 'flex', 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        backgroundColor: '#fff' 
+      }}>
+        <img src={lg} alt="Loading..." width="600px" />
+      </div>
+    );
+  }
 
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={user ? <HomePage /> : <Login />} />
-         <Route path="/home/employeemanagement" element={<EmployeeManagement/>} />
-
+        <Route path="/home/employeemanagement" element={<EmployeeManagement />} />
       </Routes>
     </BrowserRouter>
   );
