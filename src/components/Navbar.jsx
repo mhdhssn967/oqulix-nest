@@ -36,10 +36,10 @@ useEffect(() => {
     <>
       <div className='nav-container'>
         <div><img src={OQ} alt=""  /></div>
-        <p className='user-name-nav'><i className="fa-solid fa-circle-user"></i> {userName}</p>
+        <p className='user-name-nav'><i className="fa-solid fa-circle-user"></i> {userName ||'UserName'}</p>
         <div><button className='logout' onClick={handleLogout}>Logout</button></div>
       </div>
-              <h3 style={{margin:'10px'}}>{companyName}</h3>
+              <h3 style={{margin:'10px'}}>{companyName || 'Company'}</h3>
 
     </>
   );

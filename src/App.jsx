@@ -6,7 +6,7 @@ import { auth } from '../firebaseConfig';
 import { onAuthStateChanged } from 'firebase/auth';
 import EmployeeManagement from './pages/EmployeeManagement';
 import lg from './assets/lg.gif'; // Loading gif import
-
+import './App.css'
 const App = () => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true); // Add loading state
@@ -30,7 +30,7 @@ const App = () => {
         alignItems: 'center', 
         backgroundColor: '#fff' 
       }}>
-        <img src={lg} alt="Loading..." width="600px" />
+        <img src={lg} alt="Loading..." className='loading-gif'/>
       </div>
     );
   }
